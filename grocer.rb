@@ -3,10 +3,11 @@ def consolidate_cart(cart)
   hash_cart = {}
   cart.each do |item|
     if hash_cart.include?(item.keys[0])
-      
-      hash_cart[item.keys[0]][:count] += 1
+      if hash_cart[item.keys[0]][:count]
+        hash_cart[item.keys[0]][:count] += 1
+      end 
   binding.pry
-  end
+    end
 end
 
 def apply_coupons(cart, coupons)
