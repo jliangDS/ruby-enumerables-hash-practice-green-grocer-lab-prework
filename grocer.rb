@@ -6,7 +6,6 @@ def consolidate_cart(cart)
       if hash_cart[item.keys[0]][:count]
         hash_cart[item.keys[0]][:count] += 1
       end
-  binding.pry
     end
 end
 
