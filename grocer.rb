@@ -8,9 +8,12 @@ def consolidate_cart(cart)
       end
     else
       hash_cart[item.keys[0]] = {
-        :price => 
+        :price => item.values[0][:price],
+        :clearance => item.values[0][:clearance],
+        :count => 1
       }
     end
+  end
 end
 
 def apply_coupons(cart, coupons)
