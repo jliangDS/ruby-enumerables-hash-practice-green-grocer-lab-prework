@@ -1,5 +1,6 @@
+require 'pry'
 def consolidate_cart(cart)
-  # code here
+  binding.pry
 end
 
 def apply_coupons(cart, coupons)
